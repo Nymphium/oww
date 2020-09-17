@@ -1,0 +1,4 @@
+(library
+  (name oww_domains)
+  (libraries entities))
+

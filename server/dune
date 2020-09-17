@@ -1,0 +1,5 @@
+(library
+  (name server)
+  (libraries opium lwt yojson oww_domains handler)
+  (preprocess
+    (pps ppx_yojson_conv ppx_deriving.std)))

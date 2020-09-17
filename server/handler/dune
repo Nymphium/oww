@@ -1,0 +1,3 @@
+(library
+  (name handler)
+  (libraries opium oww_domains))
