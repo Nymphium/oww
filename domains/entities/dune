@@ -1,3 +1,4 @@
 (library
   (name entities)
-  (libraries opium))
+  (libraries oww_lib opium)
+  (private_modules field))

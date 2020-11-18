@@ -1,0 +1,3 @@
+(library
+  (name repositories_impl_in_memory)
+  (libraries oww_domains oww_ports ulid))

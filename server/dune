@@ -1,5 +1,10 @@
 (library
   (name server)
-  (libraries opium lwt yojson oww_domains handler)
+  (libraries
+    oww_domains
+    oww_ports
+    oww_adapters
+    handler
+    opium lwt yojson)
   (preprocess
     (pps ppx_yojson_conv ppx_deriving.std)))

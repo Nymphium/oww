@@ -1,0 +1,3 @@
+(library
+  (name repositories)
+  (libraries oww_domains))

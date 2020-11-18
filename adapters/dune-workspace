@@ -1,0 +1,5 @@
+(language 2.7)
+(context default)
+
+(package
+  (name adapters))

@@ -1,0 +1,3 @@
+(library
+  (name in_memory)
+  (libraries repositories_impl_in_memory))
