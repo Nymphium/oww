@@ -2,7 +2,10 @@ open Opium.Std
 module User = Oww_domains.Entities.User
 
 module Make (Ports : sig
-  module UserRepository : Oww_ports.UserRepository
+  module Repository : sig
+    open Oww_ports.Repositories
+    module User : User
+  end
 end) =
 struct
   let h req =
@@ -10,7 +13,7 @@ struct
     let res =
       let open Oww_lib.Option in
       let* id = User.Id.prj id in
-      return @@ Ports.UserRepository.get id
+      return @@ Ports.Repository.User.get id
     in
     match res with
     | Some user -> `Json (User.to_json user) |> respond'

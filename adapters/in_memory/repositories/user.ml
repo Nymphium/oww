@@ -1,6 +1,8 @@
-module User = Oww_domains.Entities.User
+open struct
+  module User = Oww_domains.Entities.User
+end
 
-module Make () = struct
+module Make () : Oww_ports.Repositories.User = struct
   module M = Map.Make (struct
     type t = User.Id.t
 

@@ -1,4 +1,6 @@
-module User = Oww_domains.Entities.User
+open struct
+  module User = Oww_domains.Entities.User
+end
 
 module type S = sig
   val create : User.Freight.t -> User.Id.t

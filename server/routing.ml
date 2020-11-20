@@ -10,7 +10,10 @@ let ( @|! ) methd handler_m route =
 ;;
 
 module Ports = struct
-  module UserRepository = Oww_adapters.In_memory.Repositories.User.Make ()
+  module Repository = struct
+    open Oww_adapters.In_memory.Repositories
+    module User = User.Make ()
+  end
 end
 
 let routing prv =

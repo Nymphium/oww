@@ -2,7 +2,10 @@ open Opium.Std
 module User = Oww_domains.Entities.User
 
 module Make (Ports : sig
-  module UserRepository : Oww_ports.UserRepository
+  module Repository : sig
+    open Oww_ports.Repositories
+    module User : User
+  end
 end) =
 struct
   let h req =
@@ -10,7 +13,7 @@ struct
       let open Oww_lib.Option in
       let name = param req "name" in
       let* age = param req "age" |> int_of_string_opt in
-      return @@ Ports.UserRepository.create User.Freight.{ name; age }
+      return @@ Ports.Repository.User.create User.Freight.{ name; age }
     in
     match res with
     | None -> Default.h ()
