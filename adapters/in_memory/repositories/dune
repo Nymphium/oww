@@ -1,3 +1,4 @@
 (library
-  (name repositories_impl_in_memory)
-  (libraries oww_domains oww_ports ulid))
+  (name adapters_in_memory_repositories)
+  (public_name oww.adapters.in_memory.repositories)
+  (libraries oww.domains oww.ports ulid))

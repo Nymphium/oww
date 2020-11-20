@@ -1,5 +1,5 @@
 open Opium.Std
-module User = Entities.User
+module User = Oww_domains.Entities.User
 
 module Make (Ports : sig
   module UserRepository : Oww_ports.UserRepository

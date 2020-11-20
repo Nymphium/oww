@@ -1,3 +1,4 @@
 (library
-  (name repositories)
-  (libraries oww_domains))
+  (name repositories__)
+  (public_name oww.ports.repositories)
+  (libraries oww.domains))

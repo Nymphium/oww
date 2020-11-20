@@ -1,2 +1,4 @@
 (library
- (name oww_lib))
+ (name oww_lib)
+ (public_name oww.lib)
+ (private_modules Monadic_syn))

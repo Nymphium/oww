@@ -1,1 +1,1 @@
-module In_memory = In_memory
+module In_memory = In_memory__

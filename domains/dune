@@ -1,4 +1,5 @@
 (library
   (name oww_domains)
-  (libraries entities))
+  (public_name oww.domains)
+  (libraries oww.domains.entities))
 

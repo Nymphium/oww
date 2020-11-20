@@ -1,1 +1,1 @@
-module type UserRepository = Repositories.User.S
+module type UserRepository = Repositories__.User.S

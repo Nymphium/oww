@@ -4,7 +4,7 @@
     oww_domains
     oww_ports
     oww_adapters
-    handler
+    handler__
     opium lwt yojson)
   (preprocess
     (pps ppx_yojson_conv ppx_deriving.std)))

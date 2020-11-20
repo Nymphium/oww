@@ -1,6 +1,2 @@
 (lang dune 2.7)
-
-(package
-  (name server)
-  (depends
-    (opium (>= 0.17.1))))
+(context default)

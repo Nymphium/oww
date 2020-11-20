@@ -1,4 +1,6 @@
 (library
-  (name entities)
-  (libraries oww_lib opium)
+  (name entities__)
+  (public_name oww.domains.entities)
+  (libraries oww.lib ezjsonm)
   (private_modules field))
+

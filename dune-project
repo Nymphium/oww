@@ -11,4 +11,4 @@
 
     (utop :dev)
     (ocamlformat :dev)
-    (ocaml-lsp :dev)))
+    (ocaml-lsp-server :dev)))
